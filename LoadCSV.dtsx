@@ -1,0 +1,1920 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="11/29/2020 10:08:48 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="JO-DELL-LAPTOP"
+  DTS:CreatorName="JO-DELL-LAPTOP\Jo"
+  DTS:DTSID="{EB81A38F-6115-43A7-BB33-D18CCA897E9E}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.0800.90"
+  DTS:LocaleID="2057"
+  DTS:ObjectName="LoadCSV"
+  DTS:PackageType="5"
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{8BF644CB-F8B5-4722-9810-40830BD3168B}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CONN_CSV_MUSHROOMS]"
+      DTS:CreationName="FLATFILE"
+      DTS:Description="Connection to mushrooms file"
+      DTS:DTSID="{6BF9CC68-B53B-451A-B2BE-463659C884C2}"
+      DTS:ObjectName="CONN_CSV_MUSHROOMS">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2057"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Sensyne\Assignment Senior Data Engn- agaricus-lepiota - send.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="1"
+              DTS:DTSID="{FA82E94C-6304-4CE1-B3B8-80E2385CFC49}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="3"
+              DTS:DTSID="{BDDF8C12-692C-4EF5-8FD1-B19D6930117F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="5"
+              DTS:DTSID="{462F2778-449E-4A84-8948-CF69A1AD937F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="8"
+              DTS:DTSID="{6A638602-BE74-46DF-891D-97FDDB224F42}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="9"
+              DTS:DTSID="{FA8669BA-BD54-4DF0-80EF-1C6E9BB6D145}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="14"
+              DTS:DTSID="{3318A084-2C20-4C5E-9291-228552B703E9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="17"
+              DTS:DTSID="{496CD32B-02A0-4A16-BDDA-B88F596F3944}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="19"
+              DTS:DTSID="{9DAECC27-37F3-47B4-BE54-303223F246D9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="20"
+              DTS:DTSID="{3BE73E87-6F5A-46A8-AA41-22F511A30BF2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="21"
+              DTS:DTSID="{D7CB1B7D-A3E1-4A58-894A-4917B9C316F9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="22"
+              DTS:DTSID="{50A028FF-0672-4609-AEB2-6F1721F2431E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="lat"
+              DTS:DTSID="{61624A3C-A5E9-45F3-B9D5-F02729EA1DC6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="lon"
+              DTS:DTSID="{40A51E31-C8F5-4414-8D9B-483AF76AFF21}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Time"
+              DTS:DTSID="{FE046AE1-66D0-4F0F-9D01-B390280D68B0}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CONN_OLEDB_MUSHROOMS]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{2D5131F2-64AA-4B1A-9FFC-C5F5AD4BF2AD}"
+      DTS:ObjectName="CONN_OLEDB_MUSHROOMS">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost\SQLEXPRESS;Initial Catalog=Mushrooms;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\DFT_CSV_TO_SQL"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{4C474DEE-60AA-4188-BC28-D1DF8261E441}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DFT_CSV_TO_SQL"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DFT_CSV_TO_SQL\CNV_TIME"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Converts Time value to a time data type"
+              name="CNV_TIME"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\DFT_CSV_TO_SQL\CNV_TIME.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\CNV_TIME.Inputs[Data Conversion Input].Columns[Time]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Time"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[Time]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT_CSV_TO_SQL\CNV_TIME.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\DFT_CSV_TO_SQL\CNV_TIME.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\CNV_TIME.Outputs[Data Conversion Output].Columns[Clean_Time]"
+                      dataType="dbTime"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="RedirectRow"
+                      lineageId="Package\DFT_CSV_TO_SQL\CNV_TIME.Outputs[Data Conversion Output].Columns[Clean_Time]"
+                      name="Clean_Time"
+                      truncationRowDisposition="RedirectRow">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[Time]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DFT_CSV_TO_SQL\CNV_TIME.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\DFT_CSV_TO_SQL\CNV_TIME.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\CNV_TIME.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT_CSV_TO_SQL\CNV_TIME.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\CNV_TIME.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT_CSV_TO_SQL\CNV_TIME.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT_CSV_TO_SQL\DER_NULL_TIME"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Use NULL where Time could not be converted to a time data type"
+              name="DER_NULL_TIME"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\DFT_CSV_TO_SQL\DER_NULL_TIME.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT_CSV_TO_SQL\DER_NULL_TIME.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\DFT_CSV_TO_SQL\DER_NULL_TIME.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\DER_NULL_TIME.Outputs[Derived Column Output].Columns[Null_Time]"
+                      dataType="dbTime"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\DFT_CSV_TO_SQL\DER_NULL_TIME.Outputs[Derived Column Output].Columns[Null_Time]"
+                      name="Null_Time"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">NULL(DT_DBTIME)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">NULL(DT_DBTIME)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DFT_CSV_TO_SQL\DER_NULL_TIME.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\DFT_CSV_TO_SQL\DER_NULL_TIME.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\DER_NULL_TIME.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT_CSV_TO_SQL\DER_NULL_TIME.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\DER_NULL_TIME.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT_CSV_TO_SQL\DER_NULL_TIME.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="SQL Express table"
+              name="DST_OLE_SQL"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[mushrooms]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[CONN_OLEDB_MUSHROOMS]"
+                  connectionManagerRefId="Package.ConnectionManagers[CONN_OLEDB_MUSHROOMS]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].Columns[1]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="1"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[cap-shape-code]"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[1]" />
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].Columns[3]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="3"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[cap-color-code]"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[3]" />
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].Columns[5]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="5"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[odor-code]"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[5]" />
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].Columns[8]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="8"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[gill-size-code]"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[8]" />
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].Columns[9]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="9"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[gill-color-code]"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[9]" />
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].Columns[14]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="14"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[stalk-above-ring-color-code]"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[14]" />
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].Columns[17]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="17"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[veil-color-code]"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[17]" />
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].Columns[19]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="19"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[ring-type-code]"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[19]" />
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].Columns[20]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="20"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[spore-print-color-code]"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[20]" />
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].Columns[21]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="21"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[population-code]"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[21]" />
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].Columns[22]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="22"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[habitat-code]"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[22]" />
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].Columns[lat]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="lat"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[latitude]"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[lat]" />
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].Columns[lon]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="lon"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[longitude]"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[lon]" />
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].Columns[Clean_Time]"
+                      cachedDataType="dbTime"
+                      cachedName="Clean_Time"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[time]"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[Clean_Time]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[cap-shape-code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="cap-shape-code" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[cap-color-code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="cap-color-code" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[odor-code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="odor-code" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[gill-size-code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="gill-size-code" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[gill-color-code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="gill-color-code" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[stalk-above-ring-color-code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="stalk-above-ring-color-code" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[veil-color-code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="veil-color-code" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[ring-type-code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="ring-type-code" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[spore-print-color-code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="spore-print-color-code" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[population-code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="population-code" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[habitat-code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="habitat-code" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[latitude]"
+                      dataType="r8"
+                      name="latitude" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[longitude]"
+                      dataType="r8"
+                      name="longitude" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[geolocation]"
+                      dataType="image"
+                      name="geolocation" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input].ExternalColumns[time]"
+                      dataType="dbTime2"
+                      name="time" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="CSV source file"
+              localeId="2057"
+              name="SRC_FF_CSV"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[CONN_CSV_MUSHROOMS]"
+                  connectionManagerRefId="Package.ConnectionManagers[CONN_CSV_MUSHROOMS]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[1]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[1]"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[1]"
+                      name="1"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[3]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[3]"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[3]"
+                      name="3"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[5]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[5]"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[5]"
+                      name="5"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[8]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[8]"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[8]"
+                      name="8"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[9]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[9]"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[9]"
+                      name="9"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[14]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[14]"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[14]"
+                      name="14"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[17]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[17]"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[17]"
+                      name="17"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[19]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[19]"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[19]"
+                      name="19"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[20]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[20]"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[20]"
+                      name="20"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[21]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[21]"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[21]"
+                      name="21"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[22]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[22]"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[22]"
+                      name="22"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[lat]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[lat]"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[lat]"
+                      name="lat"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[lon]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[lon]"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[lon]"
+                      name="lon"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[Time]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[Time]"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[Time]"
+                      name="Time"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="1" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[3]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="3" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[5]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="5" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[8]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="8" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[9]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="9" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[14]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="14" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[17]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="17" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[19]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="19" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[20]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="20" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[21]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="21" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[22]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="22" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[lat]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="lat" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[lon]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="lon" />
+                    <externalMetadataColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].ExternalColumns[Time]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Time" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT_CSV_TO_SQL\UNION"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combine ok rows with cleansed rows"
+              name="UNION"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 1]"
+                  name="Union All Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 1].Columns[1]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="1"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[1]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[1]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 1].Columns[3]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="3"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[3]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[3]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 1].Columns[5]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="5"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[5]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[5]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 1].Columns[8]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="8"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[8]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[8]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 1].Columns[9]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="9"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[9]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[9]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 1].Columns[14]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="14"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[14]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[14]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 1].Columns[17]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="17"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[17]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[17]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 1].Columns[19]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="19"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[19]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[19]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 1].Columns[20]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="20"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[20]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[20]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 1].Columns[21]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="21"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[21]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[21]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 1].Columns[22]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="22"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[22]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[22]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 1].Columns[lat]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="lat"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[lat]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[lat]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 1].Columns[lon]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="lon"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[lon]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[lon]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 1].Columns[Time]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Time"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[Time]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[Time]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 1].Columns[Clean_Time]"
+                      cachedDataType="dbTime"
+                      cachedName="Clean_Time"
+                      lineageId="Package\DFT_CSV_TO_SQL\CNV_TIME.Outputs[Data Conversion Output].Columns[Clean_Time]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[Clean_Time]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 2]"
+                  hasSideEffects="true"
+                  name="Union All Input 2">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 2].Columns[1]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="1"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[1]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[1]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 2].Columns[3]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="3"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[3]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[3]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 2].Columns[5]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="5"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[5]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[5]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 2].Columns[8]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="8"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[8]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[8]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 2].Columns[9]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="9"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[9]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[9]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 2].Columns[14]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="14"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[14]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[14]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 2].Columns[17]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="17"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[17]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[17]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 2].Columns[19]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="19"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[19]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[19]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 2].Columns[20]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="20"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[20]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[20]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 2].Columns[21]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="21"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[21]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[21]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 2].Columns[22]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="22"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[22]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[22]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 2].Columns[lat]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="lat"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[lat]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[lat]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 2].Columns[lon]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="lon"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[lon]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[lon]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 2].Columns[Time]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Time"
+                      lineageId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output].Columns[Time]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[Time]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 3]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 3">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1]"
+                  name="Union All Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[1]"
+                      name="1" />
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[3]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[3]"
+                      name="3" />
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[5]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[5]"
+                      name="5" />
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[8]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[8]"
+                      name="8" />
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[9]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[9]"
+                      name="9" />
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[14]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[14]"
+                      name="14" />
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[17]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[17]"
+                      name="17" />
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[19]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[19]"
+                      name="19" />
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[20]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[20]"
+                      name="20" />
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[21]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[21]"
+                      name="21" />
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[22]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[22]"
+                      name="22" />
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[lat]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[lat]"
+                      name="lat" />
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[lon]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[lon]"
+                      name="lon" />
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[Time]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[Time]"
+                      name="Time" />
+                    <outputColumn
+                      refId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[Clean_Time]"
+                      dataType="dbTime"
+                      lineageId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1].Columns[Clean_Time]"
+                      name="Clean_Time" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DFT_CSV_TO_SQL.Paths[Data Conversion Error Output]"
+              endId="Package\DFT_CSV_TO_SQL\DER_NULL_TIME.Inputs[Derived Column Input]"
+              name="Data Conversion Error Output"
+              startId="Package\DFT_CSV_TO_SQL\CNV_TIME.Outputs[Data Conversion Error Output]" />
+            <path
+              refId="Package\DFT_CSV_TO_SQL.Paths[Data Conversion Output]"
+              endId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 1]"
+              name="Data Conversion Output"
+              startId="Package\DFT_CSV_TO_SQL\CNV_TIME.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\DFT_CSV_TO_SQL.Paths[Derived Column Output]"
+              endId="Package\DFT_CSV_TO_SQL\UNION.Inputs[Union All Input 2]"
+              name="Derived Column Output"
+              startId="Package\DFT_CSV_TO_SQL\DER_NULL_TIME.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\DFT_CSV_TO_SQL.Paths[Flat File Source Output]"
+              endId="Package\DFT_CSV_TO_SQL\CNV_TIME.Inputs[Data Conversion Input]"
+              name="Flat File Source Output"
+              startId="Package\DFT_CSV_TO_SQL\SRC_FF_CSV.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\DFT_CSV_TO_SQL.Paths[Union All Output 1]"
+              endId="Package\DFT_CSV_TO_SQL\DST_OLE_SQL.Inputs[OLE DB Destination Input]"
+              name="Union All Output 1"
+              startId="Package\DFT_CSV_TO_SQL\UNION.Outputs[Union All Output 1]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="167,42"
+          Id="Package\DFT_CSV_TO_SQL"
+          TopLeft="71.5,115.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\DFT_CSV_TO_SQL">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="139.5,42"
+          Id="Package\DFT_CSV_TO_SQL\SRC_FF_CSV"
+          TopLeft="111.75,9" />
+        <NodeLayout
+          Size="129,42"
+          Id="Package\DFT_CSV_TO_SQL\CNV_TIME"
+          TopLeft="111.25,81.75" />
+        <EdgeLayout
+          Id="Package\DFT_CSV_TO_SQL.Paths[Flat File Source Output]"
+          TopLeft="178.625,51">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,30.75"
+              Start="0,0"
+              End="0,23.25">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.25" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="159.5,42"
+          Id="Package\DFT_CSV_TO_SQL\DER_NULL_TIME"
+          TopLeft="249.25,188.5" />
+        <EdgeLayout
+          Id="Package\DFT_CSV_TO_SQL.Paths[Data Conversion Error Output]"
+          TopLeft="195.916666666667,123.75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="133.083333333333,64.75"
+              Start="0,0"
+              End="133.083333333333,57.25">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.3759571209801" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.3759571209801"
+                    Point2="0,26.3759571209801"
+                    Point3="4,26.3759571209801" />
+                  <mssgle:LineSegment
+                    End="129.083333333333,26.3759571209801" />
+                  <mssgle:CubicBezierSegment
+                    Point1="129.083333333333,26.3759571209801"
+                    Point2="133.083333333333,26.3759571209801"
+                    Point3="133.083333333333,30.3759571209801" />
+                  <mssgle:LineSegment
+                    End="133.083333333333,57.25" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0.455279947916679,31.3759571209801,132.1727734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="147.5,42"
+          Id="Package\DFT_CSV_TO_SQL\DST_OLE_SQL"
+          TopLeft="121.5,380.75" />
+        <NodeLayout
+          Size="112,42"
+          Id="Package\DFT_CSV_TO_SQL\UNION"
+          TopLeft="143.25,291.25" />
+        <EdgeLayout
+          Id="Package\DFT_CSV_TO_SQL.Paths[Data Conversion Output]"
+          TopLeft="155.583333333333,123.75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="26.3333333333333,167.5"
+              Start="0,0"
+              End="26.3333333333333,160">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,79.5592766242465" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,79.5592766242465"
+                    Point2="0,83.5592766242465"
+                    Point3="4,83.5592766242465" />
+                  <mssgle:LineSegment
+                    End="22.3333333333333,83.5592766242465" />
+                  <mssgle:CubicBezierSegment
+                    Point1="22.3333333333333,83.5592766242465"
+                    Point2="26.3333333333333,83.5592766242465"
+                    Point3="26.3333333333333,87.5592766242465" />
+                  <mssgle:LineSegment
+                    End="26.3333333333333,160" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT_CSV_TO_SQL.Paths[Derived Column Output]"
+          TopLeft="329,230.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-112.416666666667,60.75"
+              Start="0,0"
+              End="-112.416666666667,53.25">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.9366197183099" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.9366197183099"
+                    Point2="0,35.9366197183099"
+                    Point3="-4,35.9366197183099" />
+                  <mssgle:LineSegment
+                    End="-108.416666666667,35.9366197183099" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-108.416666666667,35.9366197183099"
+                    Point2="-112.416666666667,35.9366197183099"
+                    Point3="-112.416666666667,39.9366197183099" />
+                  <mssgle:LineSegment
+                    End="-112.416666666667,53.25" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT_CSV_TO_SQL.Paths[Union All Output 1]"
+          TopLeft="197.25,333.25">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47.5"
+              Start="0,0"
+              End="0,40">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text="Loads data from CSV to SQL Express database. &#xD;&#xA;Data profiling has revealed that not all values in the Time column are numberic. In these cases Time is set to NULL."
+          ParentId="Package\DFT_CSV_TO_SQL"
+          FontInfo="{assembly:Null}"
+          Size="633,60"
+          Id="479fe20b-c8a4-4566-b5e9-ad4fb73e4018"
+          TopLeft="324.5,14.25" />
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT_CSV_TO_SQL\DST_OLE_SQL">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
